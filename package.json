@@ -1,0 +1,19 @@
+{
+  "name": "presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didacus/presentation.git"
+  },
+  "author": "Diego Oriani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didacus/presentation/issues"
+  },
+  "homepage": "https://github.com/didacus/presentation#readme"
+}

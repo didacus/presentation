@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+.cf:before,
+.container:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/* IE 6/7 */
+.cf {
+  zoom: 1; }
+
+body,
+html {
+  font-family: "expo-serif-pro", serif;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+  body p,
+  html p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-family: "expo-serif-pro", serif;
+    font-style: normal;
+    font-weight: 300; }
+  body h1,
+  html h1 {
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-style: normal;
+    font-weight: 600; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6,
+  body p,
+  html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5,
+  html h6,
+  html p {
+    margin: 0;
+    padding-bottom: 1.8rem; }
+
+nav {
+  margin-top: 2.2rem; }
+
+.main-nav {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  vertical-align: bottom;
+  list-style: none; }
+
+.main-nav li {
+  padding-left: 2.4rem; }
+
+.main-nav a {
+  border-bottom: solid 1px;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+  text-decoration: none; }
+
+.main-nav .logo {
+  background: #4584b1; }
+
+section {
+  position: relative; }
+  section .golden {
+    position: absolute;
+    top: 8rem; }
+
+.indexDesc {
+  position: absolute;
+  top: 30%;
+  padding: 0;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+#countup {
+  position: relative;
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  #countup li {
+    float: left;
+    padding: 6px 5px 0 0; }
+  #countup .timeRefDays,
+  #countup .timeRefHours,
+  #countup .timeRefMinutes,
+  #countup .timeRefMonths,
+  #countup .timeRefSeconds,
+  #countup .timeRefYears {
+    position: relative;
+    font-family: "aktiv-grotesk", sans-serif;
+    top: 8px;
+    font-weight: 500;
+    font-size: 0.5rem;
+    vertical-align: bottom;
+    height: 10px;
+    opacity: 0.7;
+    text-transform: uppercase; }
+
+#page-wrapper {
+  position: fixed;
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+  z-index: 99; }
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0.5em 0.25rem 0;
+  text-align: center; }
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer; }
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset; }
