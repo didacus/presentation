@@ -1,0 +1,181 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.container:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+/* IE 6/7 */
+.cf {
+  zoom: 1;
+}
+$niveau: "niveau-grotesk",sans-serif;
+$type-serif: "expo-serif-pro",serif;
+$type-sanSerif: "aktiv-grotesk",sans-serif;
+$secondary-text-color: white;
+$text-gutter: 1.8rem;
+$margin-sides: 11.7rem;
+
+//Mixins
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide {
+  @include centerer;
+  width: 90.67%;
+  height: 100vh;
+  // height: 79.62%;
+  background-color: #F3F3F3;
+}
+
+h5 {
+  padding-top: 38px;
+  font: 300 30px $type-sanSerif;
+  margin-bottom: 180px;
+}
+
+body,
+html {
+  font-family: $type-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  h5 {
+    padding-top: 1.5rem;
+    font: 300 1.5rem $type-sanSerif;
+    margin: 0 0 180px 0;
+  }
+
+  h1 {
+    font: 500 5rem $type-sanSerif;
+  }
+}
+
+nav {
+  margin-top: 2.2rem;
+}
+
+.main-nav {
+  margin-left: auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: bottom;
+  list-style: none;
+}
+
+.main-nav li {
+  padding-left: 2.4rem;
+}
+
+.main-nav a {
+  border-bottom: solid 1px;
+  font-family: $type-sanSerif;
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+  text-decoration: none;
+}
+
+.main-nav .logo {
+  background: #4584b1;
+}
+
+section {
+  position: relative;
+
+  .golden {
+    position: absolute;
+    top: 8rem;
+  }
+}
+
+.indexDesc {
+  position: absolute;
+  top: 30%;
+  padding: 0;
+  font-family: $type-sanSerif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  transform: rotate(-90deg);
+}
+
+#countup {
+  position: relative;
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    float: left;
+    padding: 6px 5px 0 0;
+  }
+
+  .timeRefDays,
+  .timeRefHours,
+  .timeRefMinutes,
+  .timeRefMonths,
+  .timeRefSeconds,
+  .timeRefYears {
+    position: relative;
+    font-family: $type-sanSerif;
+    top: 8px;
+    font-weight: 500;
+    font-size: 0.5rem;
+    vertical-align: bottom;
+    height: 10px;
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+}
+
+//Buttons
+#page-wrapper {
+  position: fixed;
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0.5em 0.25rem 0;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
