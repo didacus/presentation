@@ -13,6 +13,19 @@ $(document).ready(function(){
 
   });
 
+  // Based on nextIndex function
+  // onLeave: function(index, nextIndex, direction){
+  // // var leavingSection = $(this);
+  //
+  //   if(nextIndex == 2 && direction ==="down"){
+  //
+  //
+  //   } else if(nextIndex == 1 && direction == "up") {
+  //
+  //
+  //   }
+  // }
+
   //Fullscreen
   var requestFullscreen = function(ele) {
     if (ele.requestFullscreen) {
