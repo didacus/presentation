@@ -4,12 +4,12 @@ $(document).ready(function(){
     // sectionsColor: ['', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
-    navigation: true,
-    slidesNavigation: true,
+    // navigation: true,
+    slidesNavigation: false,
     css3: true,
     controlArrows: false,
-    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
-    menu: '#menu',
+    anchors: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10' ],
+    // menu: '#menu',
 
   });
 
@@ -66,13 +66,5 @@ $(document).ready(function(){
   fsExitDocButton.addEventListener('click', function(e) {
     e.preventDefault();
     exitFullscreen();
-  });
-
-  var fsVidButton = document.getElementById('fs-vid-button');
-  var video = document.getElementById('video');
-
-  fsVidButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    requestFullscreen(video);
   });
 });

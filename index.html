@@ -7,7 +7,8 @@
 
     <!-- css files -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="/library/jquery.fullPage.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <link rel="stylesheet" href="dist/master.css">
     <!-- typekit -->
     <script src="https://use.typekit.net/fdo1qyv.js"></script>
@@ -23,11 +24,14 @@
     </div>
 
     <!-- titles -->
-    <div class="frame-title">
       <div class="grid-noGutter">
-        <h5>Whatever</h5>
+        <div class="col-10 page-title" data-push-left="off-1">
+          <h5>Whatever</h5>
+        </div>
       </div>
-    </div>
+
+      <!-- <div class="red"></div>
+      <div class="blue"></div> -->
 
     <!-- lines -->
     <div class="grid-noGutter">
@@ -56,8 +60,8 @@
 
     <div id="fullpage">
       <section class="vertical-scrolling">
-        <div class="grid-noGutter slide">
-          <div class="col-12.grid-noGutter">
+        <div class="grid-noGutter">
+          <div class="col-10.grid-noGutter" data-push-left="off-1">
             <div class="col-9 content-align">
               <h2>In a nutshell, I am a UX designer specialising in design for digital products and services for screens of all shapes and sizes.</h2>
             </div>
@@ -66,8 +70,8 @@
       </section>
 
       <section class="vertical-scrolling">
-        <div class="grid-noGutter slide">
-          <div class="col-12.grid-noGutter">
+        <div class="grid-noGutter">
+          <div class="col-10.grid-noGutter" data-push-left="off-1">
             <div class="col-9 content-align">
               <h2>Through investigation and exploration I help clients to define ideas and solve problems using design thinking. </h2>
             </div>
@@ -76,30 +80,30 @@
       </section>
 
       <section class="vertical-scrolling">
-        <div class="grid-noGutter slide">
-          <div class="col-12.grid-noGutter content-align">
+        <div class="grid-noGutter">
+          <div class="col-10.grid-noGutter content-align" data-push-left="off-1">
             <div class="col-12">
               <h1>Transport for London</h1>
             </div>
             <div class="col-9">
-              <h3 class="margin-top">At TfL I work on a range of projects ranging from mobile apps and web services to product strategies and design guidelines.</h3>
+              <h3>At TfL I work on a range of projects ranging from mobile apps and web services to product strategies and design guidelines.</h3>
             </div>
           </div>
         </div>
       </section>
 
       <section class="vertical-scrolling">
-        <div class="grid-noGutter slide">
-          <div class="col-12.grid-noGutter content-align">
+        <div class="grid-noGutter">
+          <div class="col-10.grid-noGutter content-align" data-push-left="off-1">
             <div class="col-8">
               <h3>
                 Over 10 years of experience designing digital products and services across business sectors.<br><br>
-                Previous clients includes Transport for London, Samsung, BBC, Nokia, Livenation and Glastonbury.
+                Previous clients includes Transport for London, Samsung, BBC, Nokia and Glastonbury.
               </h3>
             </div>
             <div class="col-3.grid-noGutter" data-push-left="off-1">
               <div class="col-12">
-                <h3>2014-Present</h3>
+                <h3>2014-2017</h3>
                 <h5>Working with a range of clients including TfL and BBC R&D</h5>
               </div>
               <div class="col-12">
@@ -114,18 +118,40 @@
           </div>
         </div>
       </section>
+
       <section class="vertical-scrolling">
-        <div class="grid-noGutter slide">
-          <div class="col-12.grid-noGutter">
-            <div class="col-9 content-align">
-              <h2>Transport for London</h2>
-              <h3 class="margin-top">At TfL I work on a range of projects ranging from mobile apps and web services to product strategies and design guidelines.</h3>
+        <div class="horizontal-scrolling active relative">
+          <div class="grid-noGutter">
+            <div class="col-10.grid-noGutter content-align" data-push-left="off-1">
+              <div class="col-12">
+                <h1>Transport for London</h1>
+              </div>
+              <div class="col-9">
+                <h3>At TfL I work on a range of projects ranging from mobile apps and web services to product strategies and design guidelines.</h3>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="vertical-scrolling">
-        <h3>This is the fourth section</h3>
+        <div class="horizontal-scrolling relative">
+          <div class="grid-noGutter">
+            <div class="col-10.grid-noGutter content-align" data-push-left="off-1">
+              <div class="col-5">
+                <h3>MAAS</h3>
+                <ul class="tags"><li>app</li><li>transportation</li><li>concept</li><br><li>ux & design</li></ul>
+                <p>Helping TfL’s customers benefit from a totally connected travel experience where public and private transport modes are available in one unified app.</p>
+              </div>
+            </div>
+          </div>
+          <img class="img-content" src="/images/tflApp/img-maas-01.png" alt="">
+        </div>
+        <div class="horizontal-scrolling">
+          <div class="grid-noGutter">
+            <div class="col-10.grid-noGutter" data-push-left="off-1">
+
+          </div>
+        </div>
+        <div class="horizontal-scrolling"> Slide 3 </div>
+        <div class="horizontal-scrolling"> Slide 4 </div>
       </section>
     </div>
 

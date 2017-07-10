@@ -63,7 +63,6 @@ $secondary-text-color: white;
 
 .page-title {
   position: fixed;
-  margin: 2rem 0;
 }
 
 .relative {
@@ -72,8 +71,7 @@ $secondary-text-color: white;
 
 .content-align {
   position: absolute;
-  top: 20rem; // Based on computer screen
-  // top: 15rem; //Based on TV screen
+  top: 16rem;
 }
 
 .margin-description {
@@ -263,7 +261,7 @@ button:active {
 //Images
 .img-content {
   position: absolute;
-  right: 4rem;
+  right: 0;
   bottom: 0;
   width: auto;
   height: 100vh;
